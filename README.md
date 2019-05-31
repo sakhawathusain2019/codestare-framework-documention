@@ -1096,12 +1096,14 @@ $options[]  = array(
 		echo cs_get_option('id');
 	  ########## output ############
 - Select
-array(
-      'name'      => 'select_options',
-      'title'     => 'Select',
-      'icon'      => 'fa fa-check',
-      'fields'    => array(
 
+   
+    array(
+          'name'      => 'select_options',
+          'title'     => 'Select',
+          'icon'      => 'fa fa-check',
+          'fields'    => array(
+          
         array(
           'id'      => 'unique_select_1',
           'type'    => 'select',
@@ -1299,32 +1301,911 @@ array(
           ),
           'info'               => 'and much more select options for you!',
         ),
+        ),
+      ),
+    
+    
+    
+- switcher
+
+
+       array(
+          'name'      => 'switcher_options',
+          'title'     => 'Switcher',
+          'icon'      => 'fa fa-toggle-on',
+          'fields'    => array(
+
+        array(
+          'id'    => 'unique_switcher_1',
+          'type'  => 'switcher',
+          'title' => 'Simple Switcher',
+        ),
+
+        array(
+          'id'    => 'unique_switcher_2',
+          'type'  => 'switcher',
+          'title' => 'Switcher Field with Label',
+          'label' => 'Yes, Please do it.',
+        ),
+
+        array(
+          'id'    => 'unique_switcher_3',
+          'type'  => 'switcher',
+          'title' => 'Switcher Field with Help',
+          'help'  => 'I am a Tooltip helper. This field important for something.',
+        ),
+
+        array(
+          'id'      => 'unique_switcher_4',
+          'type'    => 'switcher',
+          'title'   => 'Switcher Field with Default',
+          'default' => true,
+        ),
 
       ),
     ),
     
     
+    
 - Number
 
+
+    array(
+          'name'        => 'number_options',
+          'title'       => 'Number',
+          'icon'        => 'fa fa-check',
+          'fields'      => array(
+
+        array(
+          'id'      => 'unique_number_1',
+          'type'    => 'number',
+          'title'   => 'Simple Number',
+        ),
+
+        array(
+          'id'      => 'unique_number_2',
+          'type'    => 'number',
+          'title'   => 'Number Field with Description',
+          'desc'    => 'Lets write some description for this number field.',
+        ),
+
+        array(
+          'id'      => 'unique_number_3',
+          'type'    => 'number',
+          'title'   => 'Number Field with Help',
+          'help'    => 'I am a Tooltip helper. This field important for something.',
+        ),
+
+        array(
+          'id'      => 'unique_number_4',
+          'type'    => 'number',
+          'title'   => 'Number Field with Default',
+          'default' => '10',
+        ),
+
+        array(
+          'id'            => 'unique_number_5',
+          'type'          => 'number',
+          'title'         => 'Number Field with Placeholder',
+          'attributes'    => array(
+            'placeholder' => '25'
+          )
+        ),
+
+        array(
+          'id'      => 'unique_number_6',
+          'type'    => 'number',
+          'title'   => 'Number Field with After-text',
+          'after'   => ' <i class="cs-text-muted">(px)</i>',
+        ),
+
+      ),
+    ),
+    
+    
 - Icons
+
+
+      array(
+          'name'        => 'icon_options',
+          'title'       => 'Icons',
+          'icon'        => 'fa fa-check',
+          'fields'      => array(
+
+        array(
+          'id'      => 'unique_icon_1',
+          'type'    => 'icon',
+          'title'   => 'Simple Icon',
+        ),
+
+        array(
+          'id'      => 'unique_icon_2',
+          'type'    => 'icon',
+          'title'   => 'Icon Field with Description',
+          'desc'    => 'Lets write some description for this icon field.',
+        ),
+
+        array(
+          'id'      => 'unique_icon_3',
+          'type'    => 'icon',
+          'title'   => 'Icon Field with Help',
+          'help'    => 'I am a Tooltip helper. This field important for something.',
+        ),
+
+        array(
+          'id'      => 'unique_icon_4',
+          'type'    => 'icon',
+          'title'   => 'Icon Field with Default',
+          'default' => 'fa fa-check',
+        ),
+
+        array(
+          'id'      => 'unique_icon_5',
+          'type'    => 'icon',
+          'title'   => 'Icon Field with After-text',
+          'after'   => '<p class="cs-text-muted">Lets write some description for this icon field.</i>',
+        ),
+
+      ),
+    ),
+
+
 - Group
+
+
+        array(
+          'name'      => 'group_options',
+          'title'     => 'Group',
+          'icon'      => 'fa fa-check',
+          'fields'    => array(
+
+        array(
+          'id'              => 'unique_group_1',
+          'type'            => 'group',
+          'title'           => 'Group Field',
+          'button_title'    => 'Add New',
+          'accordion_title' => 'Add New Field',
+          'fields'          => array(
+
+            array(
+              'id'          => 'unique_group_1_text',
+              'type'        => 'text',
+              'title'       => 'Text Field',
+            ),
+
+            array(
+              'id'          => 'unique_group_1_switcher',
+              'type'        => 'switcher',
+              'title'       => 'Switcher Field',
+            ),
+
+            array(
+              'id'          => 'unique_group_1_textarea',
+              'type'        => 'textarea',
+              'title'       => 'Upload Field',
+            ),
+
+          )
+        ),
+
+        array(
+          'id'              => 'unique_group_2',
+          'type'            => 'group',
+          'title'           => 'Group Field with Default',
+          'button_title'    => 'Add New',
+          'accordion_title' => 'Add New Field',
+          'fields'          => array(
+
+            array(
+              'id'          => 'unique_group_2_text',
+              'type'        => 'text',
+              'title'       => 'Text Field',
+            ),
+
+            array(
+              'id'          => 'unique_group_2_switcher',
+              'type'        => 'switcher',
+              'title'       => 'Switcher Field',
+            ),
+
+            array(
+              'id'          => 'unique_group_2_textarea',
+              'type'        => 'textarea',
+              'title'       => 'Upload Field',
+            ),
+
+          ),
+          'default'                     => array(
+            array(
+              'unique_group_2_text'     => 'Some text',
+              'unique_group_2_switcher' => true,
+              'unique_group_2_textarea' => 'Some content',
+            ),
+            array(
+              'unique_group_2_text'     => 'Some text 2',
+              'unique_group_2_switcher' => true,
+              'unique_group_2_textarea' => 'Some content 2',
+            ),
+          )
+        ),
+
+        array(
+          'id'              => 'unique_group_3',
+          'type'            => 'group',
+          'title'           => 'Group Field',
+          'info'            => 'You can use any option field on group',
+          'button_title'    => 'Add New Something',
+          'accordion_title' => 'Adding New Thing',
+          'fields'          => array(
+
+            array(
+              'id'          => 'unique_group_3_text',
+              'type'        => 'upload',
+              'title'       => 'Text Field',
+            ),
+
+          )
+        ),
+
+        array(
+          'id'              => 'unique_group_4',
+          'type'            => 'group',
+          'title'           => 'Group Field',
+          'desc'            => 'Accordion title using the ID of the field, for eg. "Text Field 2" using as accordion title here.',
+          'button_title'    => 'Add New',
+          'accordion_title' => 'unique_group_4_text_2',
+          'fields'          => array(
+
+            array(
+              'id'          => 'unique_group_4_text_1',
+              'type'        => 'text',
+              'title'       => 'Text Field 1',
+            ),
+
+            array(
+              'id'          => 'unique_group_4_text_2',
+              'type'        => 'text',
+              'title'       => 'Text Field 2',
+            ),
+
+            array(
+              'id'          => 'unique_group_4_text_3',
+              'type'        => 'text',
+              'title'       => 'Text Field 3',
+            ),
+
+          )
+        ),
+
+      ),
+    ),
+
 - Image
+
+
+    array(
+      'name'          => 'image_options',
+      'title'         => 'Image',
+      'icon'          => 'fa fa-check',
+      'fields'        => array(
+
+        array(
+          'id'        => 'image_1',
+          'type'      => 'image',
+          'title'     => 'Image',
+        ),
+
+        array(
+          'id'        => 'image_2',
+          'type'      => 'image',
+          'title'     => 'Image with After Text',
+          'desc'      => 'Lets write some description for this image field.',
+          'help'      => 'This option field is useful. You will love it!',
+        ),
+
+        array(
+          'id'        => 'image_3',
+          'type'      => 'image',
+          'title'     => 'Image with Custom Title',
+          'add_title' => 'Add Logo',
+        ),
+
+      ),
+    ),
+    
+    
 - Upload
+
+
+    array(
+      'name'      => 'upload_options',
+      'title'     => 'Upload',
+      'icon'      => 'fa fa-check',
+      'fields'    => array(
+
+        array(
+          'id'      => 'unique_upload_1',
+          'type'    => 'upload',
+          'title'   => 'Simple Upload',
+        ),
+
+        array(
+          'id'      => 'unique_upload_2',
+          'type'    => 'upload',
+          'title'   => 'Upload Field with Description',
+          'desc'    => 'Lets write some description for this upload field.',
+        ),
+
+        array(
+          'id'      => 'unique_upload_3',
+          'type'    => 'upload',
+          'title'   => 'Upload Field with Help',
+          'help'    => 'I am a Tooltip helper. This field important for something.',
+        ),
+
+        array(
+          'id'      => 'unique_upload_4',
+          'type'    => 'upload',
+          'title'   => 'Upload Field with Default',
+          'default' => 'screenshot-1.png',
+        ),
+
+        array(
+          'id'      => 'unique_upload_5',
+          'type'    => 'upload',
+          'title'   => 'Upload Field with After-text',
+          'after'   => '<p class="cs-text-muted">You can use default value <strong>get_template_directory_uri()</strong>."/images/screenshot-1.png"</p>',
+        ),
+
+        array(
+          'id'            => 'unique_upload_6',
+          'type'          => 'upload',
+          'title'         => 'Upload Field with Placeholder',
+          'attributes'    => array(
+            'placeholder' => 'http://'
+          ),
+        ),
+
+        array(
+          'id'             => 'unique_upload_7',
+          'type'           => 'upload',
+          'title'          => 'Upload Field with Custom Title',
+          'settings'       => array(
+            'button_title' => 'Upload Logo',
+            'frame_title'  => 'Choose a image',
+            'insert_title' => 'Use this image',
+          ),
+        ),
+
+        array(
+          'id'             => 'unique_upload_8',
+          'type'           => 'upload',
+          'title'          => 'Upload Field with Video',
+          'settings'       => array(
+            'upload_type'  => 'video',
+            'button_title' => 'Upload Video',
+            'frame_title'  => 'Choose a Video',
+            'insert_title' => 'Use This Video',
+          ),
+        ),
+
+      ),
+    ),
+
 - Gallery
+
+
+    array(
+      'name'            => 'gallery_options',
+      'title'           => 'Gallery',
+      'icon'            => 'fa fa-check',
+      'fields'          => array(
+
+        array(
+          'id'          => 'gallery_1',
+          'type'        => 'gallery',
+          'title'       => 'Gallery',
+        ),
+
+        array(
+          'id'          => 'gallery_2',
+          'type'        => 'gallery',
+          'title'       => 'Gallery with Custom Title',
+          'add_title'   => 'Add Images',
+          'edit_title'  => 'Edit Images',
+          'clear_title' => 'Remove Images',
+        ),
+
+        array(
+          'id'          => 'gallery_3',
+          'type'        => 'gallery',
+          'title'       => 'Gallery with Custom Title',
+          'desc'        => 'Lets write some description for this image field.',
+          'help'        => 'This option field is useful. You will love it!',
+          'add_title'   => 'Add Image(s)',
+          'edit_title'  => 'Edit Image(s)',
+          'clear_title' => 'Clear Image(s)',
+        ),
+
+      ),
+    ),
 - Sorter
+
+
+    array(
+      'name'     => 'sorter_options',
+      'title'    => 'Sorter',
+      'icon'     => 'fa fa-check',
+      'fields'   => array(
+
+        array(
+          'id'             => 'sorter_1',
+          'type'           => 'sorter',
+          'title'          => 'Sorter',
+          'default'        => array(
+            'enabled'      => array(
+              'bmw'        => 'BMW',
+              'mercedes'   => 'Mercedes',
+              'volkswagen' => 'Volkswagen',
+            ),
+            'disabled'     => array(
+              'ferrari'    => 'Ferrari',
+              'mustang'    => 'Mustang',
+            ),
+          ),
+        ),
+
+        array(
+          'id'             => 'sorter_2',
+          'type'           => 'sorter',
+          'title'          => 'Sorter',
+          'default'        => array(
+            'enabled'      => array(
+              'blue'       => 'Blue',
+              'green'      => 'Green',
+              'red'        => 'Red',
+              'yellow'     => 'Yellow',
+              'orange'     => 'Orange',
+              'ocean'      => 'Ocean',
+            ),
+            'disabled'     => array(
+              'black'      => 'Black',
+              'white'      => 'White',
+            ),
+          ),
+          'enabled_title'  => 'Active Colors',
+          'disabled_title' => 'Deactive Colors',
+        ),
+      ),
+
+    ),
 - Wysiwyg
-- Switcher
+
+
+    array(
+      'name'         => 'wysiwyg_options',
+      'title'        => 'Wysiwyg',
+      'icon'         => 'fa fa-check',
+      'fields'       => array(
+
+        array(
+          'id'       => 'wysiwyg_1',
+          'type'     => 'wysiwyg',
+          'title'    => 'Wysiwyg',
+        ),
+
+        array(
+          'id'       => 'wysiwyg_2',
+          'type'     => 'wysiwyg',
+          'title'    => 'Wysiwyg with Custom Settings',
+          'settings' => array(
+            'textarea_rows' => 5,
+            'tinymce'       => false,
+            'media_buttons' => false,
+          )
+        ),
+
+
+      ),
+    ),
 - Background
+
+
+    array(
+      'name'      => 'background_options',
+      'title'     => 'Background',
+      'icon'      => 'fa fa-check',
+      'fields'    => array(
+
+        array(
+          'id'    => 'unique_background_1',
+          'type'  => 'background',
+          'title' => 'Background',
+        ),
+
+        array(
+          'id'    => 'unique_background_2',
+          'type'  => 'background',
+          'title' => 'Background Field with Description',
+          'desc'  => 'Lets write some description for this background field.',
+          'help'  => 'I am a Tooltip helper. This field important for something.',
+        ),
+
+        array(
+          'id'           => 'unique_background_3',
+          'type'         => 'background',
+          'title'        => 'Background Field with Default',
+          'default'      => array(
+            'image'      => 'something.png',
+            'repeat'     => 'repeat-x',
+            'position'   => 'center center',
+            'attachment' => 'fixed',
+            'color'      => '#ffbc00',
+          ),
+        ),
+
+        array(
+          'id'      => 'unique_background_4',
+          'type'    => 'background',
+          'title'   => 'Background Field with Description',
+          'after'   => '<p class="cs-text-muted">Information: There is some description for option.</p> ',
+          'default' => array(
+            'color' => '#222',
+          ),
+        ),
+
+      ),
+    ),
+    
+    
 - Color Picker
-- Multi Checkbox
+
+
+    array(
+      'name'      => 'color_picker_options',
+      'title'     => 'Color Picker',
+      'icon'      => 'fa fa-check',
+      'fields'    => array(
+
+        array(
+          'id'      => 'unique_color_picker_1',
+          'type'    => 'color_picker',
+          'title'   => 'Color Picker',
+          'default' => '#dd3333',
+        ),
+
+        array(
+          'id'      => 'unique_color_picker_2',
+          'type'    => 'color_picker',
+          'title'   => 'Color Picker RGBA disabled',
+          'rgba'    => false,
+        ),
+
+        array(
+          'id'      => 'unique_color_picker_3',
+          'type'    => 'color_picker',
+          'title'   => 'Color Picker Field with Description',
+          'desc'    => 'Lets write some description for this color picker field.',
+        ),
+
+        array(
+          'id'      => 'unique_color_picker_4',
+          'type'    => 'color_picker',
+          'title'   => 'Color Picker Field with Help',
+          'help'    => 'I am a Tooltip helper. This field important for something.',
+        ),
+
+        array(
+          'id'      => 'unique_color_picker_5',
+          'type'    => 'color_picker',
+          'title'   => 'Color Picker Field with Default',
+          'default' => 'rgba(0, 0, 255, 0.25)',
+        ),
+
+        array(
+          'id'      => 'unique_color_picker_6',
+          'type'    => 'color_picker',
+          'title'   => 'Color Picker Field with Default',
+          'after'   => '<p class="cs-text-muted">Information: There is some description for option.</p> ',
+          'default' => 'rgba(0, 255, 0, 0.75)',
+        ),
+
+      ),
+    ),
+
 - Checkbox Image Select
-- Radio Image Select
+
+
+    array(
+      'name'      => 'image_select_options',
+      'title'     => 'Image Select',
+      'icon'      => 'fa fa-check',
+      'fields'    => array(
+
+        array(
+          'id'           => 'unique_image_select_1',
+          'type'         => 'image_select',
+          'title'        => 'Image Select (Checkbox)',
+          'options'      => array(
+            'value-1'    => 'http://codestarframework.com/assets/images/placeholder/150x125-2ecc71.gif',
+            'value-2'    => 'http://codestarframework.com/assets/images/placeholder/150x125-e74c3c.gif',
+            'value-3'    => 'http://codestarframework.com/assets/images/placeholder/150x125-ffbc00.gif',
+            'value-4'    => 'http://codestarframework.com/assets/images/placeholder/150x125-3498db.gif',
+          ),
+        ),
+
+        array(
+          'id'           => 'unique_image_select_2',
+          'type'         => 'image_select',
+          'title'        => 'Image Select (Checkbox) with Default',
+          'options'      => array(
+            'value-1'    => 'http://codestarframework.com/assets/images/placeholder/150x125-ffbc00.gif',
+            'value-2'    => 'http://codestarframework.com/assets/images/placeholder/150x125-3498db.gif',
+            'value-3'    => 'http://codestarframework.com/assets/images/placeholder/150x125-e74c3c.gif',
+            'value-4'    => 'http://codestarframework.com/assets/images/placeholder/150x125-2ecc71.gif',
+            'value-5'    => 'http://codestarframework.com/assets/images/placeholder/150x125-555555.gif',
+          ),
+          'default'      => 'value-2'
+        ),
+
+        array(
+          'id'           => 'unique_image_select_3',
+          'type'         => 'image_select',
+          'title'        => 'Image Select (Radio) with Default',
+          'options'      => array(
+            'value-1'    => 'http://codestarframework.com/assets/images/placeholder/150x125-2ecc71.gif',
+            'value-2'    => 'http://codestarframework.com/assets/images/placeholder/150x125-e74c3c.gif',
+            'value-3'    => 'http://codestarframework.com/assets/images/placeholder/150x125-ffbc00.gif',
+            'value-4'    => 'http://codestarframework.com/assets/images/placeholder/150x125-3498db.gif',
+          ),
+          'radio'        => true,
+          'default'      => 'value-3'
+        ),
+
+        array(
+          'id'           => 'unique_image_select_4',
+          'type'         => 'image_select',
+          'title'        => 'Image Select (Radio) with Default',
+          'options'      => array(
+            'value-1'    => 'http://codestarframework.com/assets/images/placeholder/80x80-2c3e50.gif',
+            'value-2'    => 'http://codestarframework.com/assets/images/placeholder/80x80-2c3e50.gif',
+            'value-3'    => 'http://codestarframework.com/assets/images/placeholder/80x80-2c3e50.gif',
+            'value-4'    => 'http://codestarframework.com/assets/images/placeholder/80x80-2c3e50.gif',
+            'value-5'    => 'http://codestarframework.com/assets/images/placeholder/80x80-2c3e50.gif',
+            'value-6'    => 'http://codestarframework.com/assets/images/placeholder/80x80-2c3e50.gif',
+            'value-7'    => 'http://codestarframework.com/assets/images/placeholder/80x80-2c3e50.gif',
+            'value-8'    => 'http://codestarframework.com/assets/images/placeholder/80x80-2c3e50.gif',
+          ),
+          'radio'        => true,
+          'default'      => 'value-2'
+        ),
+
+        array(
+          'id'           => 'unique_image_select_5',
+          'type'         => 'image_select',
+          'title'        => 'Image Select with Multi Select',
+          'options'      => array(
+            'value-1'    => 'http://codestarframework.com/assets/images/placeholder/80x80-2c3e50.gif',
+            'value-2'    => 'http://codestarframework.com/assets/images/placeholder/80x80-2c3e50.gif',
+            'value-3'    => 'http://codestarframework.com/assets/images/placeholder/80x80-e74c3c.gif',
+            'value-4'    => 'http://codestarframework.com/assets/images/placeholder/80x80-ffbc00.gif',
+            'value-5'    => 'http://codestarframework.com/assets/images/placeholder/80x80-3498db.gif',
+            'value-6'    => 'http://codestarframework.com/assets/images/placeholder/80x80-2ecc71.gif',
+            'value-7'    => 'http://codestarframework.com/assets/images/placeholder/80x80-2c3e50.gif',
+            'value-8'    => 'http://codestarframework.com/assets/images/placeholder/80x80-2c3e50.gif',
+          ),
+          'multi_select' => true,
+          'default'      => array( 'value-3', 'value-4', 'value-5', 'value-6' )
+        ),
+
+      ),
+    ),
+    
+    
 - Typography
+
+
+    array(
+      'name'          => 'typography_options',
+      'title'         => 'Typography',
+      'icon'          => 'fa fa-check',
+      'fields'        => array(
+
+        array(
+          'id'        => 'unique_typography_1',
+          'type'      => 'typography',
+          'title'     => 'Typography with Default',
+          'default'   => array(
+            'family'  => 'Open Sans',
+            'font'    => 'google', // this is helper for output ( google, websafe, custom )
+            'variant' => '800',
+          ),
+        ),
+
+        array(
+          'id'        => 'unique_typography_2',
+          'type'      => 'typography',
+          'title'     => 'Typography without Chosen',
+          'default'   => array(
+            'family'  => 'Ubuntu',
+            'font'    => 'google',
+          ),
+          'chosen'    => false,
+        ),
+
+        array(
+          'id'        => 'unique_typography_3',
+          'type'      => 'typography',
+          'title'     => 'Typography without Chosen/Variant',
+          'default'   => array(
+            'family'  => 'Arial',
+            'font'    => 'websafe',
+          ),
+          'variant'   => false,
+          'chosen'    => false,
+        ),
+
+      ),
+    ),
+    
+    
 - Backup
+
+
+
+
+
+        $options[]   = array(
+          'name'     => 'backup_section',
+          'title'    => 'Backup',
+          'icon'     => 'fa fa-shield',
+          'fields'   => array(
+    
+        array(
+          'type'    => 'notice',
+          'class'   => 'warning',
+          'content' => 'You can save your current options. Download a Backup and Import.',
+        ),
+    
+        array(
+          'type'    => 'backup',
+        ),
+      )
+     );
+
+
+
 - Heading
+
+
+    array(
+      'name'        => 'others_options',
+      'title'       => 'Others',
+      'icon'        => 'fa fa-check',
+      'fields'      => array(
+
+        array(
+          'type'    => 'heading',
+          'content' => 'Heading',
+        ),
+
+        array(
+          'id'      => 'unique_others_text_1',
+          'type'    => 'text',
+          'title'   => 'Others Text Field 1',
+        ),
+        ),
+        ),
+    
+    
 - Sub Heading
+
+
+        array(
+          'type'    => 'subheading',
+          'content' => 'Sub Heading',
+        ),
+
+        array(
+          'id'      => 'unique_others_text_3',
+          'type'    => 'text',
+          'title'   => 'Others Text Field 3',
+        ),
+        
+        
 - Fieldset
-- Notice
+
+
+    array(
+      'name'     => 'fieldset_options',
+      'title'    => 'Fieldset',
+      'icon'     => 'fa fa-check',
+      'fields'   => array(
+
+        array(
+          'id'        => 'fieldset_1',
+          'type'      => 'fieldset',
+          'title'     => 'Fieldset Field',
+          'fields'    => array(
+
+            array(
+              'id'    => 'fieldset_1_text',
+              'type'  => 'text',
+              'title' => 'Text Field',
+            ),
+
+            array(
+              'id'    => 'fieldset_1_upload',
+              'type'  => 'upload',
+              'title' => 'Upload Field',
+            ),
+
+            array(
+              'id'    => 'fieldset_1_textarea',
+              'type'  => 'textarea',
+              'title' => 'Textarea Field',
+            ),
+
+          ),
+        ),
+
+        array(
+          'id'        => 'fieldset_2',
+          'type'      => 'fieldset',
+          'title'     => 'Fieldset Field with Default',
+          'fields'    => array(
+
+            array(
+              'type'    => 'subheading',
+              'content' => 'Title of Fieldset',
+            ),
+
+            array(
+              'id'      => 'fieldset_2_text',
+              'type'    => 'text',
+              'title'   => 'Text Field',
+            ),
+
+            array(
+              'id'      => 'fieldset_2_checkbox',
+              'type'    => 'checkbox',
+              'title'   => 'Checkbox Field',
+              'label'   => 'Are you sure?',
+            ),
+
+            array(
+              'id'      => 'fieldset_2_textarea',
+              'type'    => 'textarea',
+              'title'   => 'Upload Field',
+            ),
+
+          ),
+          'default'   => array(
+            'fieldset_2_text'     => 'Hello',
+            'fieldset_2_checkbox' => true,
+            'fieldset_2_textarea' => 'Do stuff',
+          )
+        ),
+
+      ),
+    ),
+- Normal Ssection
+
+
+    $options[]   = array(
+      'name'     => 'normal_section',
+      'title'    => 'Normal Section',
+      'icon'     => 'fa fa-minus',
+      'fields'   => array(
+    
+        array(
+          'type'    => 'content',
+          'content' => 'This section is empty, add some options...',
+        ),
+    
+      )
+    );
+
 - and **extendable** fields
 
 ## License
@@ -1363,9 +2244,3 @@ Thanks for guys! Please read [credits](http://codestarframework.com/credits/). I
 - Removed: call_user_function idea
 - Removed: custom/callback function support for field options
 
-See [changelog](CHANGELOG.md)
-
----
-
-##### Using Codestar Framework Themes
-[![Route Responsive Multi-Purpose WordPress Theme](http://s3.codestarlive.com/route/userbox/route-preview-promo.png)](http://themeforest.net/item/route-responsive-multipurpose-wordpress-theme/8815770?ref=Codestar)
