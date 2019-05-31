@@ -2189,22 +2189,26 @@ $options[]  = array(
 
       ),
     ),
+    
+    
 - Normal Ssection
 
 
-    $options[]   = array(
-      'name'     => 'normal_section',
-      'title'    => 'Normal Section',
-      'icon'     => 'fa fa-minus',
-      'fields'   => array(
-    
-        array(
-          'type'    => 'content',
-          'content' => 'This section is empty, add some options...',
-        ),
-    
-      )
-    );
+
+        $options[]   = array(
+          'name'     => 'normal_section',
+          'title'    => 'Normal Section',
+          'icon'     => 'fa fa-minus',
+          'fields'   => array(
+        
+            array(
+              'type'    => 'content',
+              'content' => 'This section is empty, add some options...',
+            ),
+        
+          )
+        );
+
 
 
 - and **extendable** fields
