@@ -1096,7 +1096,216 @@ $options[]  = array(
 		echo cs_get_option('id');
 	  ########## output ############
 - Select
+array(
+      'name'      => 'select_options',
+      'title'     => 'Select',
+      'icon'      => 'fa fa-check',
+      'fields'    => array(
+
+        array(
+          'id'      => 'unique_select_1',
+          'type'    => 'select',
+          'title'   => 'Select',
+          'options' => array(
+            'yes'   => 'Yes, Please.',
+            'no'    => 'No, Thank you.'
+          )
+        ),
+
+        array(
+          'id'             => 'unique_select_2',
+          'type'           => 'select',
+          'title'          => 'Select with First Empty Value',
+          'options'        => array(
+            'yes'          => 'Yes, Please.',
+            'no'           => 'No, Thank you.'
+          ),
+          'default_option' => 'Select an option',
+          'help'           => 'I am a Tooltip helper. This field important for something.',
+        ),
+
+        array(
+          'id'             => 'unique_select_3',
+          'type'           => 'select',
+          'title'          => 'Select with Help',
+          'options'        => array(
+            'green'        => 'Green',
+            'red'          => 'Red',
+            'blue'         => 'Blue',
+            'yellow'       => 'Yellow',
+            'black'        => 'Black',
+          ),
+          'default_option' => 'Select a color',
+          'info'           => 'Choose your favorite skin.',
+        ),
+
+        array(
+          'id'             => 'unique_select_4',
+          'type'           => 'select',
+          'title'          => 'Select with Default Value',
+          'options'        => array(
+            'primary'      => 'Primary Option',
+            'secondary'    => 'Secondry Option',
+            'tertiary'     => 'Tertiary Option',
+          ),
+          'default'        => 'tertiary',
+          'default_option' => 'Select an option',
+        ),
+
+        array(
+          'id'         => 'unique_select_6',
+          'type'       => 'select',
+          'title'      => 'Select Field with Multi-select',
+          'options'    => array(
+            'bmw'      => 'BMW',
+            'mercedes' => 'Mercedes',
+            'jaguar'   => 'Jaguar',
+            'opel'     => 'Opel',
+            'golf'     => 'Golf',
+            'ferrari'  => 'Ferrari',
+            'subaru'   => 'Subaru',
+            'seat'     => 'Seat',
+          ),
+          'attributes' => array(
+            'multiple' => 'only-key',
+            'style'    => 'width: 150px; height: 125px;'
+          )
+        ),
+
+        array(
+          'id'         => 'unique_select_7',
+          'type'       => 'select',
+          'title'      => 'Select Field with Multi-default',
+          'options'    => array(
+            'bmw'      => 'BMW',
+            'mercedes' => 'Mercedes',
+            'jaguar'   => 'Jaguar',
+            'opel'     => 'Opel',
+            'golf'     => 'Golf',
+            'ferrari'  => 'Ferrari',
+            'subaru'   => 'Subaru',
+            'seat'     => 'Seat',
+          ),
+          'attributes' => array(
+            'multiple' => 'only-key',
+            'style'    => 'width: 150px; height: 125px;'
+          ),
+          'default'    => array( 'bmw', 'mercedes', 'opel' ),
+          'info'       => 'Choose your favorite cars.',
+        ),
+
+        array(
+          'id'             => 'unique_select_8',
+          'type'           => 'select',
+          'title'          => 'Select with Pages',
+          'options'        => 'pages',
+          'default_option' => 'Select a page'
+        ),
+
+        array(
+          'id'             => 'unique_select_9',
+          'type'           => 'select',
+          'title'          => 'Select with Posts',
+          'options'        => 'posts',
+          'default_option' => 'Select a post'
+        ),
+
+        array(
+          'id'             => 'unique_select_10',
+          'type'           => 'select',
+          'title'          => 'Select with Categories',
+          'options'        => 'categories',
+          'default_option' => 'Select a tag'
+        ),
+
+        array(
+          'id'             => 'unique_select_10_1',
+          'type'           => 'select',
+          'title'          => 'Select with Menus',
+          'options'        => 'menus',
+          'default_option' => 'Select a menu'
+        ),
+
+        array(
+          'id'         => 'unique_select_11',
+          'type'       => 'select',
+          'title'      => 'Select with Pages with Multi-Select',
+          'options'    => 'pages',
+          'attributes' => array(
+            'multiple' => 'only-key',
+            'style'    => 'width: 150px; height: 125px;'
+          )
+        ),
+
+        array(
+          'id'                 => 'unique_select_12',
+          'type'               => 'select',
+          'title'              => 'Select with Chosen',
+          'options'            => array(
+            'bmw'              => 'BMW',
+            'mercedes'         => 'Mercedes',
+            'jaguar'           => 'Jaguar',
+            'opel'             => 'Opel',
+            'golf'             => 'Golf',
+            'ferrari'          => 'Ferrari',
+            'subaru'           => 'Subaru',
+            'seat'             => 'Seat',
+          ),
+          'class'              => 'chosen',
+          'default_option'     => 'Select your car',
+        ),
+
+        array(
+          'id'                 => 'unique_select_13',
+          'type'               => 'select',
+          'title'              => 'Select with Chosen Multi-Select',
+          'options'            => array(
+            'bmw'              => 'BMW',
+            'mercedes'         => 'Mercedes',
+            'jaguar'           => 'Jaguar',
+            'opel'             => 'Opel',
+            'golf'             => 'Golf',
+            'ferrari'          => 'Ferrari',
+            'subaru'           => 'Subaru',
+            'seat'             => 'Seat',
+          ),
+          'class'              => 'chosen',
+          'attributes'         => array(
+            'data-placeholder' => 'Select your favrorite cars',
+            'multiple'         => 'only-key',
+            'style'            => 'width: 200px;'
+          ),
+        ),
+
+        array(
+          'id'             => 'unique_select_14',
+          'type'           => 'select',
+          'title'          => 'Select with Chosen with Pages',
+          'options'        => 'pages',
+          'class'          => 'chosen',
+          'default_option' => 'Select a page'
+        ),
+
+        array(
+          'id'                 => 'unique_select_15',
+          'type'               => 'select',
+          'title'              => 'Select with Chosen with Posts Multi-Select',
+          'options'            => 'posts',
+          'class'              => 'chosen',
+          'attributes'         => array(
+            'data-placeholder' => 'Select your favrorite posts',
+            'multiple'         => 'only-key',
+            'style'            => 'width: 200px;'
+          ),
+          'info'               => 'and much more select options for you!',
+        ),
+
+      ),
+    ),
+    
+    
 - Number
+
 - Icons
 - Group
 - Image
